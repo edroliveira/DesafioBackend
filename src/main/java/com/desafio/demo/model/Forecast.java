@@ -27,5 +27,15 @@ public class Forecast {
 	private String date;
 	private String description;
 	private String condition;
+	
+	public Forecast (String date, String description, String condition) {
+		this.date = date;
+		this.description = description;
+		this.condition = condition;
+	}
+	
+	public Long getId() {
+		return id;
+	}
 
 }
