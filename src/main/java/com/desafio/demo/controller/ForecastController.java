@@ -28,7 +28,6 @@ public class ForecastController {
 		this.repository = forecastRepository;
 	}
 	
-	
 	@GetMapping
 	public List findAll() {
 		return repository.findAll();
@@ -42,7 +41,6 @@ public class ForecastController {
 	}
 	
 
-	
 	@PostMapping
 	public Forecast create(@RequestBody Forecast forecast){
 	   return repository.save(forecast);

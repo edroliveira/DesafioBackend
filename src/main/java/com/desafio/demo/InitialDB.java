@@ -68,13 +68,13 @@ public class InitialDB implements CommandLineRunner {
 	                System.out.println(objects);
 	                
 	                String  date = (String) objects.get("date");
-	                System.out.println(" ~~~~ " + date);
+	                System.out.println(" ---> " + date);
 	                
 	                String description = (String) objects.get("description");
-	                System.out.println(" ~~~~ " + description);
+	                System.out.println(" ---> " + description);
 	                
 	                String condition = (String) objects.get("condition");
-	                System.out.println(" ~~~~ " + condition);
+	                System.out.println(" ---> " + condition);
 	                
 	                Forecast forecast = new Forecast(date, description, condition);
 	                this.forecastRepository.save(forecast);
